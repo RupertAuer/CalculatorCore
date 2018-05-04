@@ -18,7 +18,7 @@ pipeline {
             sh 'dotnet test'
           }
         }
-        stage('') {
+        stage('List Tests') {
           steps {
             sh 'dotnet test -t'
           }
