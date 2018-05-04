@@ -16,9 +16,9 @@ pipeline {
         sh 'dotnet test '
       }
     }
-    stage('Docker commands') {
+    stage('Publish') {
       steps {
-        sh 'docker container ls -a'
+        sh 'dotnet publish'
       }
     }
   }
