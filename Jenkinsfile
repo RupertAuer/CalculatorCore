@@ -15,11 +15,22 @@ pipeline {
       steps {
         sh 'dotnet build'
       }
+      
+      post {
+        success {
+          archiveArtifacts 'target/*.hpi,target/*.jpi'
+        }
+      } 
     }
     stage('Test') {
       steps {
         sh 'dotnet test '
       }
+       post {
+        always {
+          junit '**surefire-reports/**/*.xml'
+        }
+      } 
     }
   }
 }
