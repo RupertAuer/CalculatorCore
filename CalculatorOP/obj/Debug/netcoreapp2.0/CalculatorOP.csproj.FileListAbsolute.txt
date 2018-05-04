@@ -1,7 +1,6 @@
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\bin\Debug\netcoreapp2.0\CalculatorOP.deps.json
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\bin\Debug\netcoreapp2.0\CalculatorOP.dll
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\bin\Debug\netcoreapp2.0\CalculatorOP.pdb
-C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\obj\Debug\netcoreapp2.0\CalculatorOP.csprojResolveAssemblyReference.cache
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\obj\Debug\netcoreapp2.0\CalculatorOP.csproj.CoreCompileInputs.cache
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\obj\Debug\netcoreapp2.0\CalculatorOP.AssemblyInfoInputs.cache
 C:\Users\r.auer\source\repos\CalculatorCore\CalculatorOP\obj\Debug\netcoreapp2.0\CalculatorOP.AssemblyInfo.cs

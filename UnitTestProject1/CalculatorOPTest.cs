@@ -32,6 +32,28 @@ namespace Calculator.Tests
             Assert.AreEqual(20, result);
         }
 
+        [TestMethod]
+
+        public void ShouldSubReturnZeroWhenPassFiveandFive()
+        {
+            CalculatorOP sut = new CalculatorOP();
+
+            int result = sut.Sub(5, 5);
+
+            Assert.AreEqual(0, result);
+
+        }
+
+        [TestMethod]
+
+        public void ShouldDivReturn1Point5WhenPassThreeand2()
+        {
+            CalculatorOP sut = new CalculatorOP();
+
+            double result = sut.Div(3, 2);
+
+            Assert.AreEqual(2, result);
+        }
 
     }
 }

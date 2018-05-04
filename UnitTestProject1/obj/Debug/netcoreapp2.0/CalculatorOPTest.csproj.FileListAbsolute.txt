@@ -1,0 +1,17 @@
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOPTest.deps.json
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOPTest.runtimeconfig.json
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOPTest.runtimeconfig.dev.json
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOPTest.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOPTest.pdb
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOP.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\bin\Debug\netcoreapp2.0\CalculatorOP.pdb
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.csprojResolveAssemblyReference.cache
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.csproj.CoreCompileInputs.cache
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.AssemblyInfoInputs.cache
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.AssemblyInfo.cs
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.csproj.CopyComplete
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.dll
+C:\Users\r.auer\source\repos\CalculatorCore\UnitTestProject1\obj\Debug\netcoreapp2.0\CalculatorOPTest.pdb

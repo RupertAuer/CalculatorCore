@@ -1,0 +1,14 @@
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\RunCalculator.deps.json
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\RunCalculator.runtimeconfig.json
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\RunCalculator.runtimeconfig.dev.json
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\RunCalculator.dll
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\RunCalculator.pdb
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\CalculatorOP.dll
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\bin\Debug\netcoreapp2.0\CalculatorOP.pdb
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.csprojResolveAssemblyReference.cache
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.csproj.CoreCompileInputs.cache
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.AssemblyInfoInputs.cache
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.AssemblyInfo.cs
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.csproj.CopyComplete
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.dll
+C:\Users\r.auer\source\repos\CalculatorCore\RunCalculator\obj\Debug\netcoreapp2.0\RunCalculator.pdb

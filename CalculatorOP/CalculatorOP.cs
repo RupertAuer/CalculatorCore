@@ -19,6 +19,19 @@ namespace Calculator
             int result = num1 * num2;
             return result;
         }
+
+        public int Sub (int num1, int num2)
+        {
+            int result = num1 - num2;
+            return result;
+        }
+
+        public double Div (int num1, int num2)
+        {
+            double result = num1 / num2;
+
+            return result;
+        }
     }
 
 }

@@ -5721,9 +5721,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\r.auer\\source\\repos\\CalculatorCore\\UnitTestProject1\\UnitTestProject1.csproj",
-      "projectName": "UnitTestProject1",
-      "projectPath": "C:\\Users\\r.auer\\source\\repos\\CalculatorCore\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\r.auer\\source\\repos\\CalculatorCore\\UnitTestProject1\\CalculatorOPTest.csproj",
+      "projectName": "CalculatorOPTest",
+      "projectPath": "C:\\Users\\r.auer\\source\\repos\\CalculatorCore\\UnitTestProject1\\CalculatorOPTest.csproj",
       "packagesPath": "C:\\Users\\r.auer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\r.auer\\source\\repos\\CalculatorCore\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
