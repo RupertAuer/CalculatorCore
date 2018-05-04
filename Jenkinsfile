@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        git(url: 'https://github.com/RupertAuer/CalculatorCore', branch: 'master', poll: true)
         sh 'dotnet build'
       }
     }
