@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'dotnet test -r results'
+        sh 'dotnet test -l testresults -r results -t'
       }
     }
     stage('Results') {
