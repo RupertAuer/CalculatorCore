@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'dotnet test -t'
+        sh 'dotnet test -t --logger "trx[;LogFileName=LogFile]"'
       }
     }
     stage('Publish') {
