@@ -52,7 +52,7 @@ namespace Calculator.Tests
 
             double result = sut.Div(3, 2);
 
-            Assert.AreEqual(2, result);
+            Assert.AreEqual(1.5 , result);
         }
 
     }

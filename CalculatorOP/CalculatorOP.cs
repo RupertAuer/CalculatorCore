@@ -26,9 +26,9 @@ namespace Calculator
             return result;
         }
 
-        public double Div (int num1, int num2)
+        public double Div (double num1, double num2)
         {
-            double result = num1 / num2;
+            double result = (double)num1 / num2;
 
             return result;
         }
