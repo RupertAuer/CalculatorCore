@@ -35,5 +35,10 @@ pipeline {
         sh 'dotnet run -p RunCalculator'
       }
     }
+    stage('publish') {
+      steps {
+        sh 'dotnet publish '
+      }
+    }
   }
 }
