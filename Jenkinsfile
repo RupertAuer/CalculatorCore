@@ -16,9 +16,9 @@ pipeline {
         sh 'dotnet test '
       }
     }
-    stage('') {
+    stage('Docker commands') {
       steps {
-        powershell 'docker container ls -a'
+        sh 'docker container ls -a'
       }
     }
   }
