@@ -18,12 +18,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'dotnet test -l testresults -r results -t'
-      }
-    }
-    stage('Results') {
-      steps {
-        junit(testResults: 'results/**/*.xml', allowEmptyResults: true)
+        sh 'dotnet test '
       }
     }
   }
