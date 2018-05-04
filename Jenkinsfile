@@ -21,5 +21,10 @@ pipeline {
         sh 'dotnet test -r results'
       }
     }
+    stage('Results') {
+      steps {
+        junit(testResults: 'results/**/*.xml', allowEmptyResults: true)
+      }
+    }
   }
 }
