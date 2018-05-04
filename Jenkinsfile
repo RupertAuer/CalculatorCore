@@ -12,8 +12,17 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        sh 'dotnet test -t'
+      parallel {
+        stage('Test') {
+          steps {
+            sh 'dotnet test'
+          }
+        }
+        stage('') {
+          steps {
+            sh 'dotnet test -t'
+          }
+        }
       }
     }
     stage('Publish') {
