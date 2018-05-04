@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'dotnet-vstest'
+        sh 'dotnet vstest'
       }
     }
     stage('Publish') {
