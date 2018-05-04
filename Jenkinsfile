@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'dotnet test --collect:"Code Coverage"'
+        sh 'dotnet test '
       }
     }
   }
