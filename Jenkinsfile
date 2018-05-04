@@ -30,9 +30,9 @@ pipeline {
         }
       }
     }
-    stage('Publish') {
+    stage('Run') {
       steps {
-        sh 'dotnet publish'
+        sh 'dotnet run -p RunCalculator'
       }
     }
   }
