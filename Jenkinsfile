@@ -6,11 +6,6 @@ pipeline {
 
   }
   stages {
-    stage('git') {
-      steps {
-        git(url: 'https://github.com/RupertAuer/CalculatorCore.git', branch: 'master', poll: true)
-      }
-    }
     stage('build') {
       parallel {
         stage('DOTNET') {
