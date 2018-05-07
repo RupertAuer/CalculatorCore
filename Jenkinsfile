@@ -40,5 +40,10 @@ pipeline {
         sh 'dotnet publish '
       }
     }
+    stage('') {
+      steps {
+        sh 'docker build'
+      }
+    }
   }
 }
