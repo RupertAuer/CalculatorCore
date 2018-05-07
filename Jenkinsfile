@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'microsoft/dotnet'
+      image 'docker'
     }
 
   }
@@ -12,6 +12,12 @@ pipeline {
       }
     }
     stage('Build') {
+      agent {
+        docker {
+          image 'microsoft/dotnet'
+        }
+
+      }
       steps {
         sh 'dotnet build'
       }
@@ -40,16 +46,6 @@ pipeline {
             sh 'dotnet test -t'
           }
         }
-      }
-    }
-    stage('Run') {
-      steps {
-        sh 'dotnet run -p RunCalculator'
-      }
-    }
-    stage('publish') {
-      steps {
-        sh 'dotnet publish '
       }
     }
   }
