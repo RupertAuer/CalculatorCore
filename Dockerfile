@@ -1,6 +1,5 @@
 FROM microsoft/aspnetcore-build:latest
 WORKDIR /app
-ADD /app
 
 # Copy csproj and restore as distinct layers
 COPY *.sln ./
