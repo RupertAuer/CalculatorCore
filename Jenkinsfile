@@ -74,11 +74,11 @@ pipeline {
 
       }
       steps {
-        sh '''docker.withRegistry(\'https://registry.hub.docker.com\', \'credentials-id\') {
-
+        sh ''' withDockerRegistry([credentialsId: \'docker-hub-credentials\', url: \'https://hub.docker.com/r/rupertauer1991/letsgettingstarted/\']) {
         def customImage = docker.build("Calculator")
-        customImage.push()}
-    '''
+        customImage.push()
+
+}'''
         }
       }
     }
