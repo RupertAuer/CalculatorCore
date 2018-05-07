@@ -74,12 +74,16 @@ pipeline {
 
       }
       steps {
-        sh ''' withDockerRegistry([credentialsId: \'docker-hub-credentials\', url: \'https://hub.docker.com/r/rupertauer1991/letsgettingstarted/\']) {
-        def customImage = docker.build("Calculator")
-        customImage.push()
+        script {
+          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
 
-}'''
+            def customImage = docker.build("calculator")
+            /* Push the container to the custom Registry */
+            customImage.push()
+          }
         }
+
       }
     }
   }
+}
