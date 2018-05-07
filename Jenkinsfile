@@ -69,7 +69,7 @@ pipeline {
     stage('Docker Build Image') {
       agent {
         docker {
-          image 'Docker'
+          image 'docker'
         }
 
       }
