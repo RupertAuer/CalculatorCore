@@ -66,7 +66,7 @@ pipeline {
         }
       }
     }
-    stage('Docker Build ') {
+    stage('Docker Publish ') {
       agent {
         docker {
           image 'docker'
