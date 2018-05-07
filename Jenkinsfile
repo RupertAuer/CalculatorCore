@@ -74,10 +74,12 @@ pipeline {
 
       }
       steps {
-        sh '''docker build -t calculator .
-'''
-        sh 'docker.withRegistry("https://hub.docker.com/" , "docker-hub-credentials")  push calculator'
+        sh '''docker.withRegistry(\'https://registry.hub.docker.com\', \'credentials-id\') {
+
+        def customImage = docker.build("Calculator")
+        customImage.push()}
+    '''
+        }
       }
     }
   }
-}
