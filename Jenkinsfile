@@ -13,7 +13,7 @@ pipeline {
     }
     stage('build') {
       parallel {
-        stage('build') {
+        stage('DOTNET') {
           agent {
             docker {
               image 'microsoft/dotnet'
@@ -24,10 +24,10 @@ pipeline {
             sh 'dotnet build'
           }
         }
-        stage('') {
+        stage('ASPNETCORE') {
           agent {
             docker {
-              image 'microsoft/aspnetcore-build'
+              image 'microsoft/aspnetcore-build:latest'
             }
 
           }
