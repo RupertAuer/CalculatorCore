@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:latest
+FROM microsoft/dotnet
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
@@ -8,10 +8,5 @@ RUN dotnet restore
 # Copy everything else and build
 COPY . ./
 RUN dotnet publish -c Release -o out
-
-# Build runtime image
-FROM microsoft/aspnetcore:latest
-RUN mkdir /app
-COPY --from=build-env /app/out /app
 
 ENTRYPOINT ["dotnet", "aspnetapp.dll"]
