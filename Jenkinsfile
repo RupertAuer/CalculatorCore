@@ -74,7 +74,8 @@ pipeline {
 
       }
       steps {
-        sh 'docker build -t calculator .'
+        sh '''docker build -t calculator .
+docker.withRegistry(\'https://registry.hub.docker.com\', \'docker-hub-credentials\') push calculator'''
       }
     }
   }
