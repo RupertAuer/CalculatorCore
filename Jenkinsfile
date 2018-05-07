@@ -66,5 +66,16 @@ pipeline {
         }
       }
     }
+    stage('Docker Build Image') {
+      agent {
+        docker {
+          image 'Docker'
+        }
+
+      }
+      steps {
+        sh 'docker build -t calculator .'
+      }
+    }
   }
 }
