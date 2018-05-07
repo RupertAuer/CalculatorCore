@@ -75,15 +75,11 @@ pipeline {
       }
       steps {
         script {
-          docker.withRegistry('https://hub.docker.com/r/rupertauer1991/letsgettingstarted/', 'docker-hub-credentials') {
-
-            def customImage = docker.build("rupertauer1991/letsgettingstarted")
-            /* Push the container to the custom Registry */
-            customImage.push()
+          withDockerRegistry([ credentialsId: "docker-hub-credentials" , url: "" ]) {
+            sh 'docker push rupertauer1991/letsgettingstarted:latest'}
           }
-        }
 
+        }
       }
     }
   }
-}
