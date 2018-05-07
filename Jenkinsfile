@@ -75,7 +75,7 @@ pipeline {
       }
       steps {
         script {
-          withDockerRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
+          withDockerRegistry([ credentialsId: "docker-hub-credentials", url: "https://hub.docker.com/r/" ]) {
             sh 'docker build -t rupertauer1991/letsgettingstarted:latest .'
             sh 'docker push rupertauer1991/letsgettingstarted:latest'
           }
