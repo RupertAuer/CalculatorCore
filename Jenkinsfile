@@ -75,7 +75,7 @@ pipeline {
       }
       steps {
         script {
-          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+          docker.withRegistry('https://hub.docker.com/r/rupertauer1991/letsgettingstarted/', 'docker-hub-credentials') {
 
             def customImage = docker.build("calculator")
             /* Push the container to the custom Registry */
