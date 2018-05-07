@@ -48,5 +48,16 @@ pipeline {
         }
       }
     }
+    stage('') {
+      agent {
+        docker {
+          image 'microsoft/dotnet'
+        }
+
+      }
+      steps {
+        sh 'dotnet run'
+      }
+    }
   }
 }
