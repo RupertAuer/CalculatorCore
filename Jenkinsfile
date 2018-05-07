@@ -12,6 +12,32 @@ pipeline {
       }
     }
     stage('build') {
+      parallel {
+        stage('build') {
+          agent {
+            docker {
+              image 'microsoft/dotnet'
+            }
+
+          }
+          steps {
+            sh 'dotnet build'
+          }
+        }
+        stage('') {
+          agent {
+            docker {
+              image 'microsoft/aspnetcore-build'
+            }
+
+          }
+          steps {
+            sh 'dotnet build'
+          }
+        }
+      }
+    }
+    stage('Test') {
       agent {
         docker {
           image 'microsoft/dotnet'
@@ -19,7 +45,7 @@ pipeline {
 
       }
       steps {
-        sh 'dotnet build'
+        sh 'dotnet test'
       }
     }
   }
