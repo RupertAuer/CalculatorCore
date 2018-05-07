@@ -75,11 +75,13 @@ pipeline {
       }
       steps {
         script {
-          withDockerRegistry([ credentialsId: "docker-hub-credentials" , url: "" ]) {
-            sh 'docker push rupertauer1991/letsgettingstarted:latest'}
+          withDockerRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
+            sh 'docker build rupertauer1991/letsgettingstarted:latest'
+            sh 'docker push rupertauer1991/letsgettingstarted:latest'
           }
-
         }
+
       }
     }
   }
+}
