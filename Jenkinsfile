@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('Git') {
       agent any
       steps {
         git(url: 'https://github.com/RupertAuer/CalculatorCore.git', branch: 'master', poll: true)
@@ -74,7 +74,6 @@ pipeline {
 
       }
       steps {
-        git(url: 'https://github.com/RupertAuer/CalculatorCore.git', branch: 'master', poll: true)
         sh 'docker build -t calculator .'
       }
     }
