@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'docker'
+      image 'microsoft/dotnet'
     }
 
   }
@@ -48,7 +48,7 @@ pipeline {
         }
       }
     }
-    stage('') {
+    stage('error') {
       agent {
         docker {
           image 'microsoft/dotnet'
