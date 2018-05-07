@@ -1,8 +1,8 @@
-FROM microsoft/aspnetcore-build:2.0 AS build-env
+FROM microsoft/aspnetcore-build:latest
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
-COPY *.csproj ./
+COPY *.sln ./
 RUN dotnet restore
 
 # Copy everything else and build
