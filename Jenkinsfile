@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('error') {
       agent any
       steps {
         git(url: 'https://github.com/RupertAuer/CalculatorCore', branch: 'master', poll: true)
@@ -64,6 +64,17 @@ pipeline {
             sh 'dotnet test -t'
           }
         }
+      }
+    }
+    stage('Docker Build Image') {
+      agent {
+        docker {
+          image 'docker'
+        }
+
+      }
+      steps {
+        sh 'docker build -t Calculator'
       }
     }
   }
