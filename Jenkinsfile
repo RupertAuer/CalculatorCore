@@ -7,6 +7,7 @@ pipeline {
   }
   stages {
     stage('git') {
+      agent any
       steps {
         git(url: 'https://github.com/RupertAuer/CalculatorCore.git', branch: 'master', poll: true)
       }
