@@ -6,7 +6,13 @@ pipeline {
 
   }
   stages {
-    stage('build') {
+    stage('') {
+      agent any
+      steps {
+        git(url: 'https://github.com/RupertAuer/CalculatorCore', branch: 'master', poll: true)
+      }
+    }
+    stage('Build') {
       parallel {
         stage('DOTNET') {
           agent {
@@ -19,10 +25,10 @@ pipeline {
             sh 'dotnet build'
           }
         }
-        stage('ASPNETCORE') {
+        stage('ASPCORE') {
           agent {
             docker {
-              image 'microsoft/aspnetcore-build:latest'
+              image 'microsoft/aspnetcore-build'
             }
 
           }
@@ -43,30 +49,21 @@ pipeline {
           }
           steps {
             sh 'dotnet test'
+            sh 'dotnet test -t'
           }
         }
-        stage('error') {
+        stage('ASPCORE') {
           agent {
             docker {
-              image 'microsoft/aspnetcore-build:latest'
+              image 'microsoft/aspnetcore-build'
             }
 
           }
           steps {
             sh 'dotnet test'
+            sh 'dotnet test -t'
           }
         }
-      }
-    }
-    stage('error') {
-      agent {
-        docker {
-          image 'microsoft/dotnet'
-        }
-
-      }
-      steps {
-        sh 'dotnet test -t'
       }
     }
   }
