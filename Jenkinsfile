@@ -50,7 +50,7 @@ pipeline {
             sh 'dotnet test'
           }
         }
-        stage('') {
+        stage('error') {
           agent {
             docker {
               image 'microsoft/aspnetcore-build:latest'
@@ -63,7 +63,7 @@ pipeline {
         }
       }
     }
-    stage('') {
+    stage('error') {
       agent {
         docker {
           image 'microsoft/dotnet'
