@@ -74,7 +74,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker build -t Calculator'
+        sh 'docker build -t calculator'
       }
     }
   }
