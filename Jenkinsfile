@@ -19,11 +19,23 @@ pipeline {
     stage('Test') {
       parallel {
         stage('Test') {
+          agent {
+            docker {
+              image 'microsoft/dotnet'
+            }
+
+          }
           steps {
             sh 'dotnet test'
           }
         }
         stage('List Tests') {
+          agent {
+            docker {
+              image 'microsoft/dotnet'
+            }
+
+          }
           steps {
             sh 'dotnet test -t'
           }
@@ -38,11 +50,6 @@ pipeline {
     stage('publish') {
       steps {
         sh 'dotnet publish '
-      }
-    }
-    stage('') {
-      steps {
-        sh 'docker build'
       }
     }
   }
