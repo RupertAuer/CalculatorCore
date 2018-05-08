@@ -75,7 +75,7 @@ pipeline {
       }
       steps {
         script {
-          withDockerRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
+          docker.withRegistry('','docker-hub-credentials') {
             def image = docker.build("rupertauer1991/letsgettingstarted:latest")
             image.push()
           }
