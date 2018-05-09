@@ -71,8 +71,8 @@ pipeline {
       steps {
         sh 'docker build -t rupertauer1991/calculator:latest .'
         script {
-          withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
-            sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+          withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'dockerhubPassword', usernameVariable: 'dockerhubUser')]) {
+            sh "docker login -u ${env.dockerhubUser} -p ${env.dockerhubPassword}"
             sh 'docker push rupertauer1991/calculator:latest'
 
 
