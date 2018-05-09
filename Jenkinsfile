@@ -69,7 +69,7 @@ pipeline {
     stage('Docker Publish ') {
       agent any
       steps {
-        sh 'docker build -t rupertauer1991/calculator:latest'
+        sh 'docker build -t rupertauer1991/calculator:latest .'
         script {
           withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
             sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
