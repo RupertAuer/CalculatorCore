@@ -67,17 +67,16 @@ pipeline {
       }
     }
     stage('Docker Publish ') {
-      agent {
-        docker {
-          image 'docker'
-        }
-
-      }
+      agent any
       steps {
+        sh 'docker build -t rupertauer1991/calculator:latest'
         script {
-          withDockerRegistry(url: 'https://index.docker.io/v1/', credentialsId: 'dockerhub') {
-            def image = docker.build("rupertauer1991/calculator")
-            image.push('latest')
+          withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+            sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+            sh 'docker push rupertauer1991/calculator:latest'
+
+
+
           }
         }
 
