@@ -75,7 +75,7 @@ pipeline {
       }
       steps {
         script {
-          docker.withRegistry('dockerhub') {
+          withDockerRegistry(url: 'https://index.docker.io/v1/', credentialsId: 'dockerhub') {
             def image = docker.build("rupertauer1991/calculator")
             image.push('latest')
           }
